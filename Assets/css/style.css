@@ -1,0 +1,101 @@
+h1{
+text-align: center;
+margin-top: 100px;
+
+}
+
+h2{
+    text-align: center;
+    margin-top: 100px;
+    display: none;
+
+}
+
+p{
+  
+    text-align: center;
+     margin-top: 20px;
+     font-size: 20px;
+}
+
+#start{
+    background-color: blue;
+    font-size: 40px;
+    margin-left: 700px;
+}
+
+#firstpage {
+display: block;
+
+}
+
+#questionpage{
+    display:none;
+    
+}
+#ans{
+    display: none;
+}
+#button1,#button2,#button3,#button4 {
+    display: none;
+    margin-left: 400px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    background-color: green;
+    width: fit-content;
+    
+}
+#last{
+   
+    margin-left: 400px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    background-color: green;
+    width: fit-content;
+}
+
+.message,.percentage
+{
+    margin-left: 400px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+input{
+margin-left: 400px;
+}
+#highS{
+    margin-left: 650px;
+    
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+#scoreButton {
+    
+    margin-left: 700px;
+    margin-top: 50px;
+    font-size: 40px;
+    background-color: green;
+    width: fit-content;
+
+}
+#scoreh2 {
+    display: block;
+    margin-left: 40px;
+    margin-top: 50px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: green;
+}
+
+
+li{
+text-align: center;
+
+margin-bottom: 15px;
+font-size: 40px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#time{
+    text-align: end;
+    margin-top: auto;
+}
