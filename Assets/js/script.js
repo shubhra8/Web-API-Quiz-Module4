@@ -132,10 +132,12 @@ function nextpage(){
 clearInterval(timerInterval);
  timeEl.style.display="none";
   ans.style.display="none";
+let gameOver= document.createElement("h1"); 
 let h4= document.createElement("h4");
 let h3= document.createElement("h3");  
 let input = document.createElement("input");
 var b = document.createElement("button");
+gameOver.setAttribute("id","gameOver");
 h4.setAttribute("class", "percentage");
 h3.setAttribute("class","message");
 b.setAttribute("id", "last");
@@ -143,6 +145,7 @@ var span = document.createElement("span");
 span.setAttribute("id", "span1");
 percent=document.getElementById("#span1")
 //percent.innerHTML=percentage;
+document.body.appendChild(gameOver);
 document.body.appendChild(h3);
 document.body.appendChild(input);
 document.body.appendChild(h4);
@@ -151,7 +154,8 @@ document.body.appendChild(span);
 document.body.appendChild(b);
 h4.style.display="block";
 h4.innerHTML="Your Score-"+percentage + "%";
-h3.style.display="block"; 
+h3.style.display="block";
+gameOver.innerHTML="GAME OVER";
 h3.innerHTML="Enter your initials in the textbox.";
 b.innerHTML= "Submit";
 h2.style.display="none";
@@ -193,6 +197,7 @@ console.log("put some values");
   lastPage(highScore);
 
 function lastPage(highScore){
+  gameOver.style.display="none";
   h4.style.display="none";
   h3.style.display="none";
   b.style.display="none";
@@ -210,7 +215,7 @@ function lastPage(highScore){
 let goBack=document.createElement("button");
   document.body.appendChild(goBack);
   goBack.setAttribute("id","goBack");
-  goBack.innerHTML="Go BACK";
+  goBack.innerHTML="Re-Start Quiz";
   goBack.addEventListener("click",function() {
      window.location.href = "./index.html";
 })
